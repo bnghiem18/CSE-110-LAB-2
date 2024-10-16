@@ -5,8 +5,8 @@ describe('renders list', () => {
     test('renders without crashing', () => {
         render(<ToDoList />);
 
-        const createNoteButton = screen.getByText("Items bought: 0");
-        expect(createNoteButton).toBeInTheDocument();
+        const title = screen.getByText("Items bought: 0");
+        expect(title).toBeInTheDocument();
     });
   
     test('displays items', () => {
